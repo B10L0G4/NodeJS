@@ -1,0 +1,43 @@
+# Treinamentos
+Teste e práticas de treinamentos
+
+Node JS 
+
+
+**Dúvidas:**
+Qaundo instalo um modulo ele pode ser lido de qualquer pasta ou apenas na pasta em que esta alocado 
+**R:** ao instalar um modulo com -g , irá instalar globalmente 
+
+Nodemon permite executar o codigo em "tempo"real,facilitando a execução, para iniciar <br>
+**nomemon <- nome do arquivo -> <br>** 
+**para finaizar control C** 
+
+padrões devem ser seguido , se usar import sempre import, se const /require , sempre o <br>
+mesmo const/require , aparentemente ele não entende requisições diferentes em um mesmo <br>
+arquivo. Pesquisaer mais sobre. 
+
+No fs.writeFileSync é possivél criar qualquer tipo de arquivos. -- pesquisar mais sobre , e a <br> realidade de uso. Quando usando o import não precisa usar o fs. 
+<br>
+Como usar Modulos e Import 
+Moduloes são pedaços/trecho reutilizaveis de código , a função import é usada para <br>
+importar modulos que são exportados de outros modulos. 
+<br>
+
+**Sintaxes de Importação** <br>
+import **name** from 'nome do modulo' <br>
+1- importação de um modulo inteiro <br>
+**import * as name from 'module-name'** <br>
+2-Importando uma única exportação de um módulo <br>
+**importar {nome} de 'nome-do-módulo'**<br>
+3-Importando várias exportações de um módulo:<br>
+**import {nameOne, nameTwo} de 'module-name'**<br>
+4-Importar um módulo apenas para efeitos colaterais<br>
+**import './module-name'**<br>
+
+
+quando criando um arquivo Json , não esquecer na hora de rodar o programa add os parâmetros <br>
+
+## Sobre métodos sincronos e asincronos <br>
+
+Nos metodos sincronos cada linha do programa é executada após a proxima <br>
+independente de quanto tempo leve para que cada linha seja executada <br>

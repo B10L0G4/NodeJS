@@ -1,6 +1,20 @@
-//const request = require('postman-request')
-const geocode = require('./utils/geocode.js')
-const forecast = require('./utils/forecast,js')
+const geocode = require('./utils/geocode')
+const forecast = require('./utils/forecast')
+const address = process.argv[2]
+
+if (!address){
+    console.log('Please provide an address')
+}else {
+    geocode(address,(error, data)=> {
+        console.log('Error', error)
+        console.log('Data', data)
+        forecast(data.latitude, data.longitude, (error, data)=> {  
+            console.log('Error', error)
+            console.log('Data', data)
+        })
+    })
+}
+
 // const url = 'http://api.weatherstack.com//current?access_key=335ffd6b3f9ac2bddd53710984645296&query=-32.940423,-60.725034&units=m'
 // request({ url: url, json: true }, (error, response) => {
 //     if (error){
@@ -40,15 +54,13 @@ const forecast = require('./utils/forecast,js')
 // para conseguir acessar os dados contidos em data é precisei colocar a posição no array
 
 //}) 
-geocode('Svalbar',(error, data)=> {
-    console.log('Error', error)
-    console.log('Data', data)
-})
 
-forecast(78.217,15.636, (error, data)=> {  
-    console.log('Error', error)
-    console.log('Data', data)
-})
+
+
+
+
+
+
 
 
 

@@ -41,3 +41,10 @@ quando criando um arquivo Json , não esquecer na hora de rodar o programa add o
 
 Nos metodos sincronos cada linha do programa é executada após a proxima <br>
 independente de quanto tempo leve para que cada linha seja executada <br>
+
+## Path Join 
+o dirname mostra o caminho do diretorio onde estamos ,<br> 
+path.join irá "unir o caminho na pasta public e src, conectando-se ao html da pasta public pela src.
+
+## Get 
+Método de get permite configurar um servidor , em que o servidor deve fazer quando alguem tenta obter recurso especifico na http 

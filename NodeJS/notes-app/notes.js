@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-const addNotes = (title, body)=>{ 
+const addNotes = (title, body)=>{ // comando add
     const notes = loadNotes() // load lê as notas 
     const duplicateNotes = notes.find((notes)=>{ 
         return notes.title === title
@@ -20,7 +20,7 @@ const addNotes = (title, body)=>{
         console.log('Note title taken!')
     }
 }
-// adicionando remove notes 
+// adicionando remove notes , comando remove
     const removeNotes = (title)=>{ // função para deletar itens , que eu não entendi pq funciona
         const notes = loadNotes() 
         const takeNotes = notes.filter( (notes)=>{
@@ -28,12 +28,12 @@ const addNotes = (title, body)=>{
         })
         saveNotes(takeNotes)        
         if (notes > takeNotes.length){ // le o comprimnto e compara as notas
-            console.log('This note was deleted')
+            console.log('Note not found')
         } else {
-            console.log('Note not found') 
+            console.log('This note was deleted') 
         }
     }
-    const listNotes = ()=> { // lista os titulos das notas
+    const listNotes = ()=> { // lista os titulos das notas, comando list
         const notes =loadNotes()
         console.log('Your Notes')
         notes.forEach((notes) => {
@@ -41,7 +41,7 @@ const addNotes = (title, body)=>{
         });
     }    
 
-    const readNotes = (title)=> { // ler as notas 
+    const readNotes = (title)=> { // ler as notas , comando read
         const notes = loadNotes()
         const note = notes.find((notes) => notes.title === title)
     

@@ -18,10 +18,16 @@ arquivo. Pesquisaer mais sobre.
 
 No fs.writeFileSync é possivél criar qualquer tipo de arquivos. -- pesquisar mais sobre , e a <br> realidade de uso. Quando usando o import não precisa usar o fs. 
 <br>
-Como usar Modulos e Import 
+Como usar Modulos 
 Moduloes são pedaços/trecho reutilizaveis de código , a função import é usada para <br>
 importar modulos que são exportados de outros modulos. 
 <br>
+
+## Import 
+Sobre o import , usa-se a extensão **mjs** , o import se mostra uma ferramente mais simples no node <br> entretanto pouco utilizada por ser recente . 
+
+Sua simplicidade se mostra ao não precisar de abstrações ou chamadas de modulos 
+
 
 **Sintaxes de Importação** <br>
 import **name** from 'nome do modulo' <br>
@@ -48,3 +54,9 @@ path.join irá "unir o caminho na pasta public e src, conectando-se ao html da p
 
 ## Get 
 Método de get permite configurar um servidor , em que o servidor deve fazer quando alguem tenta obter recurso especifico na http 
+
+## Argumentos na Linha de Comando 
+
+-- O Node permite a leitura de argumentos na linha de comando <br>
+para isto , utiliza-se o array **process.argv** , onde pode-se fazer loops e <br>
+resgatar valores . <br>

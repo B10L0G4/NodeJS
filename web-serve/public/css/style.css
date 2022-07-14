@@ -1,14 +1,39 @@
 body{
-    padding: 0;
-    margin: 0;
+    color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 650px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.main-content{
+    flex-grow: 1;
 }
 h1 {
+    margin-bottom: 16px;
+    font-size: 64px;
     color: pink;
 
 }
-img {
-    width: 300px;
+.portraid {
+    width: 600px;
     margin-right:auto;
+}
+footer {
+    color: gray;
+    border-top: 1px solid white;
+    margin-top: 0px;
+    padding: 16px 0;
+}
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+header a{
+    color: gray;
+    margin-right: 16px;
 
-
+    text-decoration: none;
 }

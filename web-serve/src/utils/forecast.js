@@ -9,15 +9,16 @@ request({ url, json: true }, (error, {body}) => {
         } else if (body.error) {
             callback('Unable to find location, try another search', undefined)
         } else {
-            callback(undefined, {
-                WeatherNow:body.data.current_condition[0].weatherDesc[0].value,
-                Tempeture: body.data.current_condition[0].temp_C,
-                FellsLike: body.data.current_condition[0].FeelsLikeC,
-                Latitude:body.data.nearest_area[0].latitude,
-                longitude:body.data.nearest_area[0].longitude
-                
-            })
+            callback(undefined,  "It is currently "+ body.data.current_condition[0].weatherDesc[0].value + ' and '+ body.data.current_condition[0].temp_C + " degress out.")
         }
-    })
+                
+            //     //Local:body.data.nearest_area[0].region[0].value,
+            //    WeatherNow:body.data.current_condition[0].weatherDesc[0].value,
+            //     //Tempeture: body.data.current_condition[0].temp_C,
+            //     //FellsLike: body.data.current_condition[0].FeelsLikeC,
+            //     //Latitude:body.data.nearest_area[0].latitude,
+            //     //longitude:body.data.nearest_area[0].longitude
+                 
+})
 }
 module.exports = forecast

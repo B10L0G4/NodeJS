@@ -1,0 +1,17 @@
+{
+  "name": "itenslist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage":"nyc"
+  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "testesunitarios",
+  "version": "1.0.0",
+  "description": "### Sempre ter os modulos bem definidos , como será o modulo e como ele será escrito, ter pelo <br> menos uma ideia básica do que o mudulo ira fazer/executar  ### TDD - test driven development - desenvolvimento digidos/guiados por testes, <br>  ### BDD - Behaviour driven development - desenvolvimento guiado por comportamento <br>",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}

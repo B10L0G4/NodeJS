@@ -35,6 +35,15 @@ it ('returns lenght of the string', functiom (){  <br>
 ### 3- nao se deve e screver mais cidigos de producao que o necessario para aplicar o teste de <br> falha atual <br>
 
 
+## Sobre coberturas 
+
+Statemments -- instruções 
+branches  - if,else, while, for ... 
+functions - funções 
+lines  - linhas 
+
+
+
 
 
 

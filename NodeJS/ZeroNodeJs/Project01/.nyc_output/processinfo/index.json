@@ -1,0 +1,1 @@
+{"processes":{"14fc90bf-8f44-4280-9c6d-30c47dcd28a9":{"parent":null,"children":["67668bb7-c024-4ac4-8a98-4301fa9c33c6"]},"67668bb7-c024-4ac4-8a98-4301fa9c33c6":{"parent":"14fc90bf-8f44-4280-9c6d-30c47dcd28a9","children":[]}},"files":{"/Users/vcarraro/Documents/Treinamentos/NodeJs/ZeroNodeJs/Project01/src/index.js":["67668bb7-c024-4ac4-8a98-4301fa9c33c6"]},"externalIds":{}}

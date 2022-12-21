@@ -18,6 +18,7 @@ app.use(express.static(publicDirectoryPath))
 io.on('connection', () => {
     console.log('New Websocket connected ')
 })
+// teste de commit 
 
 server.listen(port, () => {
     console.log(`Server is up on port ${port}!`)

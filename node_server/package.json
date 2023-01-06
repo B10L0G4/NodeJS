@@ -1,5 +1,14 @@
 {
-  "dependencies":{"*":""},
+  "dependencies": {
+    "*": ""
+  },
   "scripts": {
-    "start": "node index.js"}
+    "start": "node index.js"
+  },
+  "name": "node_server",
+  "version": "1.0.0",
+  "description": "server de teste para Docker",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

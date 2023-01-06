@@ -1,7 +1,7 @@
-const express= requeire ('express');
+const express= require ('express');
 
 const app = express();
-const get ('/', (req, res ) => {
+const get = ('/', (req, res ) => {
   res.send('Hi There');
 });
 

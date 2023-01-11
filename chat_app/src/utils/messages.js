@@ -4,7 +4,14 @@ const generateMessages = (text)=>{
     createAd: new Date().getTime()
   }
 }
+const generateLocations = (url)=>{
+  return {
+    url,
+    createAd: new Date().getTime()
+  }
+}
 
 module.exports = {
-  generateMessages
+  generateMessages,
+  generateLocations
 }

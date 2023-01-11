@@ -22,7 +22,7 @@ socket.on('locationMessage',(url)=>{
     const html = Mustache.render(locationMessageTemplate, {
         url
     })
-    //teste de commit 
+    //teste de commit 2
     $messages.insertAdjacentHTML('beforeend', html)
 })
 $messageForm.addEventListener('submit', (e)=>{

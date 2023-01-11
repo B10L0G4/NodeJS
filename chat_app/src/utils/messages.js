@@ -1,4 +1,4 @@
-const generateMEssages = (text)=>{
+const generateMessages = (text)=>{
   return {
     text,
     createAd: new Date().getTime()
@@ -6,5 +6,5 @@ const generateMEssages = (text)=>{
 }
 
 module.exports = {
-  generateMEssages
+  generateMessages
 }

@@ -3,6 +3,7 @@ const http = require('http')
 const express = require('express')
 const socketio = require('socket.io')
 const Filter = require('bad-words')
+const {generateMEssages}= require('./utils/messages')
 
 const app = express()
 const server = http.createServer(app)
@@ -22,17 +23,17 @@ let count = 0;
 io.on('connection', (socket) => {
     console.log('New Websocket connected ')
     socket.emit('message',{
-        text : 'Welcome',
         createAt: new Date().getTime()
     })
-    socket.broadcast.emit('message','A new menber has joined!')
+    socket.emit('message',generateMEssages('Welcome!'))
+    socket.broadcast.emit('message',generateMEssages('A new menber has joined!'))
 
     socket.on('sendMessage',(message, callback) => {
         const filter = new Filter()
         if (filter.isProfane(message)){
             return callback('Profanity is not allowed')
         }
-        io.emit('message', message)
+        io.emit('message', generateMEssages(message))
         callback('Delivered')
      })
      socket.on('sendLocation',(coords, callback) => {
@@ -40,7 +41,7 @@ io.on('connection', (socket) => {
         ,callback('Delivered')
      })
      socket.on ('disconnect', ()=>{
-        io.emit('message', 'A member has left!')
+        io.emit('message', generateMEssages('A member has left!'))
     }) 
     // socket.emit('countUpdated',count)
 
@@ -50,8 +51,6 @@ io.on('connection', (socket) => {
     //     io.emit('countUpdate', count)
     // })
 })
-// teste de commit 
-
 server.listen(port, () => {
     console.log(`Server is up on port ${port}!`)
 })

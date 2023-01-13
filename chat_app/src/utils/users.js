@@ -2,11 +2,14 @@ const users = []
 
 //adduser , removeuser, getuser, getusersinroom
 
-const addUser = ({id, username, room}) => {
+const addUser = ({ id, username = '', room = '' }) => {
   // clear the data 
-  username = username.trim().toLowerCase()
-  room = room.trim().toLowerCase()
+  // username = username.trim().toLowerCase()
+  // room = room.trim().toLowerCase()
 
+    username = username.trim().toLowerCase()
+    room = room.trim().toLowerCase()
+  
   // validare  the data 
   if(!username || !room){
     return{
@@ -39,8 +42,8 @@ const getUser = (id) => {
   return users.find((user) => user.id === id)
 }
 
-getUserInRoom = (room) => {
-  room = romm.trim().toLowerCase()
+const getUserInRoom = (room) => {
+  room = room.trim().toLowerCase()
   return users.filter((user) => user.room === room)
 }
 
@@ -51,17 +54,31 @@ module.exports = {
   getUserInRoom
 }
 
-//   addUser({
-//     id:22,
-//     username:'Vanessa',
-//     room:'SP'
-//   })
 
-//   const user = getUser(22)
-//   console.log(user)
 
-//   const userList = getUserInRoom('SP')
-//   console.log(userList)
+
+
+//________________________
+  // addUser({
+  //   id:22,
+  //   username:'Vanessa',
+  //   room:'SP'
+  // })
+  // addUser({
+  //   id:23,
+  //   username:'Van',
+  //   room:'SP'
+  // })
+  // addUser({
+  //   id:24,
+  //   username:'Vans',
+  //   room:'MG'
+  // })
+  // const user = getUser(22)
+  // console.log('user',user)
+
+  // const userList = getUserInRoom('MG')
+  // console.log('listas \n',userList)
 
 // // const removedUser = removeUser(22)
 // // console.log(removeUser)

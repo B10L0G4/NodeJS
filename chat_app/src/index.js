@@ -20,10 +20,10 @@ app.use(express.static(publicDirectoryPath))
 // server --emit 
 
 io.on('connection', (socket) => {
-    console.log('New Websocket connected ')
+    console.log('New Websocket connected')
 
-    socket.on('join', ({username, room})=>{
-        const {error, user} = addUser({ id:socket.id, username,room })
+    socket.on('join', (options, callback)=>{
+        const {error, user} = addUser({ id:socket.id, ...options })
         if (error){
             return callback(error)
         }

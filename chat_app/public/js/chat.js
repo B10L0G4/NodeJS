@@ -1,5 +1,4 @@
 const socket = io();
-
 // Elments 
 const $messageForm = document.querySelector('#message-form') 
 const $messageFormInput = $messageForm.querySelector('input')
@@ -12,7 +11,10 @@ const messageTemplate = document.querySelector('#message-template').innerHTML
 const locationMessageTemplate = document.querySelector('#location-message-template').innerHTML
 
 //Options
-const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true })
+//const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true })
+const options = location.search.split("=");
+const username = options[1].split("&")[0];
+const room = options[2];
 
 
 socket.on('message', (message) => {
@@ -57,7 +59,6 @@ $sendLocationButton.addEventListener('click', ()=>{
     $sendLocationButton.setAttribute('disabled', 'disabled')
 
     navigator.geolocation.getCurrentPosition((position)=>{
-        console.log(position)
         socket.emit('sendLocation', {
             latitude: position.coords.latitude,
             longitude: position.coords.longitude
@@ -68,7 +69,10 @@ $sendLocationButton.addEventListener('click', ()=>{
     })
 })
 socket.emit('join',{username, room}, (error) => {
-    
+    if (error){
+        alert(error)
+        location.href = '/'
+    }
 })
 // socket.on('countUpdated',(count) => {
 //     console.log('The count has been updated', count )

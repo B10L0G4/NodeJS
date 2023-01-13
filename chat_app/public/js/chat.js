@@ -7,8 +7,13 @@ const $messageFormButton = $messageForm.querySelector('button')
 const $sendLocationButton = document.querySelector("#send-location")
 const $messages = document.querySelector('#messages')
 
+//Templates
 const messageTemplate = document.querySelector('#message-template').innerHTML
 const locationMessageTemplate = document.querySelector('#location-message-template').innerHTML
+
+//Options
+const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true })
+
 
 socket.on('message', (message) => {
     console.log(message)
@@ -24,7 +29,6 @@ socket.on('locationMessage',(message)=>{
         url:message.url,
         createdAt:moment(message.createdAt).format('h:mm a')
     })
-    //teste de commit 2
     $messages.insertAdjacentHTML('beforeend', html)
 })
 $messageForm.addEventListener('submit', (e)=>{
@@ -62,6 +66,9 @@ $sendLocationButton.addEventListener('click', ()=>{
             console.log('location shared!')
         }) 
     })
+})
+socket.emit('join',{username, room}, (error) => {
+    
 })
 // socket.on('countUpdated',(count) => {
 //     console.log('The count has been updated', count )

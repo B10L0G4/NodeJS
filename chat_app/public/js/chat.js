@@ -22,7 +22,7 @@ const autoscroll = () => {
     const $newMessage = $messages.lastElementChild
 
     // Height of the new message
-    if ($newMessage === null) return  // correct error message Failed to execute 'getComputedStyle' on 'Window': parameter is not of type 'Element'.
+    if ($newMessage === null) return  // correction error message Failed to execute 'getComputedStyle' on 'Window': parameter is not of type 'Element'.
     const newMessageStyles = 
     window.getComputedStyle($newMessage)
 

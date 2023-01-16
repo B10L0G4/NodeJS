@@ -14,8 +14,10 @@ const io = socketio(server)
 const port = process.env.PORT || 3002
 
 const publicDirectoryPath = path.join(__dirname,'../public')
+const publicDirectorySrc = path.join(__dirname,'../src')
 
 app.use(express.static(publicDirectoryPath))
+app.use(express.static(publicDirectorySrc))
 
 // server --emit 
 

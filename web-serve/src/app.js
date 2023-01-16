@@ -7,6 +7,7 @@ const forecast = require('./utils/forecast')
 // para rodar o app, node src/app.js
 
 const app = express()
+const port = process.nextTick.PORT || 3000
 // define caminhos para as configuracoes do express
 const publicDirectoryPath = path.join(__dirname, '../public') 
 const viewsPath = path.join(__dirname,'../template/views')
@@ -80,7 +81,7 @@ app.get('*',(req, res) => {
     })
 
 }),
-app.listen(3000,() =>{
+app.listen(port,() =>{
     console.log('Server is up on port 3000')
 })
 // console.log('Test tag ')

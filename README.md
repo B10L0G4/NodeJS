@@ -1,5 +1,13 @@
-# Treinamentos
-Teste e práticas de treinamentos
+##Instalação
+
+>nvm para windows - https://github.com/B10L0G4/nvm-windows 
+>> Comandos nvm 
+>>  nvm on -irá inicializar o nvm na versão mais recente 
+>> nvm install lts instala a ultima versão do node 
+>> nvm use <versão desejada>
+>> 
+>> para verificar se o node está instalado node --version
+
 
 Node JS 
 

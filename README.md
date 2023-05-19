@@ -21,8 +21,8 @@ Nodemon permite executar o codigo em "tempo"real,facilitando a execução, para 
 **nomemon <- nome do arquivo ->
 **para finaizar control C**
 
-padrões devem ser seguido , se usar import sempre import, se const /require , sempre o 
-mesmo const/require , aparentemente ele não entende requisições diferentes em um mesmo 
+padrões devem ser seguido , se usar import sempre import, se const /require , sempre o
+mesmo const/require , aparentemente ele não entende requisições diferentes em um mesmo
 arquivo. Pesquisaer mais sobre.
 
 No fs.writeFileSync é possivél criar qualquer tipo de arquivos. -- pesquisar mais sobre , e a realidade de uso. Quando usando o import não precisa usar o fs.
@@ -30,7 +30,6 @@ No fs.writeFileSync é possivél criar qualquer tipo de arquivos. -- pesquisar m
 Como usar Modulos
 Moduloes são pedaços/trecho reutilizaveis de código , a função import é usada para
 importar modulos que são exportados de outros modulos.
-
 
 ## Import
 
@@ -41,8 +40,8 @@ Sua simplicidade se mostra ao não precisar de abstrações ou chamadas de modul
 **Sintaxes de Importação**
 
 import **name** from 'nome do modulo'
-1- importação de um modulo inteiro 
-**import * as name from 'module-name'** 
+1- importação de um modulo inteiro
+**import * as name from 'module-name'**
 2-Importando uma única exportação de um módulo
 **importar {nome} de 'nome-do-módulo'**
 3-Importando várias exportações de um módulo:

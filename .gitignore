@@ -1,2 +1,5 @@
 /chat_app/node_nodules
-/node_modules
+/node_server/node_modules
+node_server/node_modules
+\playground\testedemodulo.js\node_modules
+NodeJS\playground\revive\node_modules

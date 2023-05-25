@@ -1,13 +1,4 @@
-# /chat_app/node_nodules
-# /node_server/node_modules
-# node_server/node_modules
-# \playground\testedemodulo.js\node_modules
-# NodeJS\playground\revive\node_modules
-
-
-# testeando os ignores 
-
 node_modules
 .DS_Store
-playground\revive\linksDeaulas.md
+\linksDeaulas.md
 

@@ -8,3 +8,5 @@
 # testeando os ignores 
 
 node_modules
+.Ds_Store
+linksDeaulas.md

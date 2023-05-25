@@ -8,6 +8,6 @@
 # testeando os ignores 
 
 node_modules
-Ds_Store
+DS_Store
 NodeJS\playground\revive\linksDeaulas.md
 

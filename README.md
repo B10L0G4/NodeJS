@@ -68,3 +68,16 @@ Método de get permite configurar um servidor , em que o servidor deve fazer qua
 ## Argumentos na Linha de Comando
 
 -- O Node permite a leitura de argumentos na linha de comando para isto , utiliza-se o array **process.argv** , onde pode-se fazer loops e resgatar valores .
+
+## Events 
+
+**getElementById** - permite pegar um elemento pelo id
+**getElemenntsByClassName** - permite pegar um elemento pela classe
+**addEventListener** - permite adicionar um evento ao elemento
+**removeEventListener** - permite remover um evento ao elemento
+**innerHTML** - permite adicionar um texto ao elemento
+**innerText** - permite adicionar um texto ao elemento
+**appendChild** - permite adicionar um elemento filho ao elemento
+**createElement** - permite criar um elemento
+
+**preventDefault** - previne o comportamento padrão do elemento

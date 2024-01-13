@@ -8,14 +8,26 @@
 <body>
     <div class="pageLogin">
         <form (ngSubmit)="onSubmit()" #form="ngForm">
-            <h1>Conecta Livros</h1>
-            <h2>Bem Vindo</h2>
-            <label class="email" for="email">Email</label>
-            <input type="text" name="email" placeholder="Email" [(ngModel)]="login.email" required>
-            <label class="senha" for="senha">Senha</label>
-            <input type="password" name="senha" placeholder="Senha" [(ngModel)]="login.senha" required>
-            <button type="submit" [disabled]="form.form.invalid">Login</button>
-            <button type="button" [routerLink]="['/criar-conta']">Registrar</button>
+            <div class="all">
+                <h1>Conecta Livros</h1>
+                <h2>Bem Vindo</h2>
+                <button type="button"class="btn btn-link" [routerLink]="['/criar-conta']">Registrar</button>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="name@email.com"[(ngModel)]="login.email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="senha"[(ngModel)]="login.senha" required>  
+                </div>
+                <button type="submit"  class="btn btn-dark" [disabled]="form.form.invalid">Login</button>
+            </div>
+
+
+
+            
+
+
 
         </form>
     </div>

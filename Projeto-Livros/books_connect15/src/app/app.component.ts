@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'books_connect15';
+  imageUrl: string = 'assets/img/treeBook.png';
 }

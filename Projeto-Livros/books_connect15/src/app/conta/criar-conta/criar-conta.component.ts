@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./criar-conta.component.css']
 })
 export class CriarContaComponent {
+login: any;
+onSubmit() {
+throw new Error('Method not implemented.');
+}
 
 }

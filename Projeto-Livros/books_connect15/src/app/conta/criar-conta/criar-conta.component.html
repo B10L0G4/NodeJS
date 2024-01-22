@@ -1,1 +1,52 @@
-<p>criar-conta works!</p>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="pageLogin">
+
+        <form (ngSubmit)="onSubmit()" #form="ngForm">
+            <div class="all">
+                <h1>Conecta Livros</h1>
+                <h2>Bem Vindo</h2>
+                <button type="button"class="btn btn-link" [routerLink]="['/criar-conta']">Cadastro</button>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="name@email.com"[(ngModel)]="login.email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="meu nome "[(ngModel)]="login.email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="senha"[(ngModel)]="login.senha" required>  
+                </div>
+                <div class="mb-3">
+                    <label for="inputPassword4" class="form-label"> Confirmar Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="senha"[(ngModel)]="login.senha" required>  
+                </div>
+                <button type="submit"  class="btn btn-dark">Cadastrar</button>
+            </div>   
+        </form>
+        <div class="text">Conecta Livros</div>
+        <div>
+            <img class="tree" src="assets/img/treeBook.png"/>
+
+        </div>
+
+
+
+        
+
+
+    </div>
+
+
+</body>
+</html>

@@ -5,26 +5,48 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './conta/login/login.component';
 import { CriarContaComponent } from './conta/criar-conta/criar-conta.component';
-import { ContaComponent } from './conta/shared/conta/conta.component';
-import { AuthComponent } from './conta/shared/auth/auth.component';
 import { HomeComponent } from './layout/home/home.component';
 import { AuthenticationComponent } from './layout/authentication/authentication.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { PasswordModule } from 'primeng/password';
+import { ButtonModule } from 'primeng/button';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CriarContaComponent,
-    ContaComponent,
-    AuthComponent,
     HomeComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
+    InputTextModule,
+    InputTextareaModule,
+    PasswordModule,
+    ButtonModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Connect</title>
+</head>
+
+<body>
+    <div class="pageLogin">
+        <form (ngSubmit)="onSubmit()" #form="ngForm">
+            <div class="card flex justify-content-right">
+                <h1>Conecta Livros</h1>
+                <h2>Bem Vindo</h2>
+                <button label="Link" target="_blank" class="p-button font-bold" [routerLink]="['/criar-conta']">Registrar</button>
+
+                
+                <span class="p-float-label">
+                    <input pInputText id="username"class="form-control" [(ngModel)]="login.email" required />
+                    <label for="username"class="form-label">Username</label>
+
+                </span>
+                <span class="p-float-label">
+                    <p-password class="form-control" [(ngModel)]="login.email" [toggleMask]="true" required></p-password>
+                    <label class="form-label" for="password">Password</label>
+                </span>
+                <p-button label="Secondary" severity="secondary">Login</p-button>
+            </div>
+        </form>
+    </div>
+    <div class="text">Conecta Livros</div>
+    <div class="img">
+        <img class="tree" src="assets/img/treeBook.png"/>
+    </div>
+</body>
+
+</html>

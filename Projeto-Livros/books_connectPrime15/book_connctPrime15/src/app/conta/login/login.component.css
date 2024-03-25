@@ -1,0 +1,58 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    display: flex;
+}
+.img {
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+
+    width: 100vh;
+    height: 100vh;
+}
+.text{
+    font-family: cursive;
+    font-size: 5rem;
+    color: black;
+    border: 5px solid black;
+    
+
+
+
+}
+
+.pageLogin{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: gray;
+    border-right: 25px pink solid;
+    width: 80vh;
+    height:100vh;
+    display: flex;
+}
+.p-button{
+    display: flex;
+    flex-direction: column;
+    border-style: hidden;
+    background-color:transparent;
+    color: black;
+    height: 2rem; 
+    
+}
+.p-button:hover{
+    background-color: transparent;
+    color: white;
+}
+
+
+.form-control{
+    display: flex;
+    width: 25rem;
+    height: 3rem;
+    
+
+}
+
+
+

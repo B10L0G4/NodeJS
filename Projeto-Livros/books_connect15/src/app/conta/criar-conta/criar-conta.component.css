@@ -1,0 +1,40 @@
+body{
+    background-color: white;
+}
+.pageLogin{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: gray;
+    border-right: 25px pink solid;
+    width: 80vh;
+    height:100vh;
+    display: flex;
+}
+.btn-link {
+    display: flex;
+    align-items: right;
+    color: black;
+}
+
+.all {
+    margin-left: 5rem;
+
+}
+.form-control{
+    width: 25rem;
+    height: 3rem;
+    border-radius: 12px;
+    border-color: black;
+}
+.tree {
+    display: flex;
+    margin-top:191px;
+    width: 45rem;
+    height:45rem;
+
+}
+.text{
+font-family: cursive;
+font-size: 120px;
+color: black;
+margin-left: 17rem;
+}

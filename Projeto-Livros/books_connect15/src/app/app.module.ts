@@ -7,6 +7,7 @@ import { LoginComponent } from './conta/login/login.component';
 import { CriarContaComponent } from './conta/criar-conta/criar-conta.component';
 import { HomeComponent } from './layout/home/home.component';
 import { AuthenticationComponent } from './layout/authentication/authentication.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AuthenticationComponent } from './layout/authentication/authentication.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

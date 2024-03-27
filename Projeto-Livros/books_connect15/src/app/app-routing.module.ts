@@ -21,7 +21,8 @@ const routes: Routes = [
     children: [
       { path:'', redirectTo: 'login', pathMatch: 'full'},
       { path:'login', component: LoginComponent},
-      { path:'criar-conta', component: CriarContaComponent}
+      { path:'criar-conta', component: CriarContaComponent},
+      { path:'home', component: HomeComponent}
     ]
   }
 ];
